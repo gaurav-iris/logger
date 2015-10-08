@@ -1,0 +1,276 @@
+[25-Sep-2014 22:01:31] PHP Fatal error:  Function name must be a string in /home/hansoftz/public_html/domains/logstaff/app/Controller/ApiController.php on line 29
+[25-Sep-2014 22:02:43] PHP Fatal error:  Function name must be a string in /home/hansoftz/public_html/domains/logstaff/app/Controller/ApiController.php on line 29
+[28-Sep-2014 12:28:44] PHP Fatal error:  Call to a member function create() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Controller/ApiController.php on line 59
+[28-Sep-2014 17:04:53] PHP Fatal error:  Call to undefined method SecurityComponent::unlockedActions() in /home/hansoftz/public_html/domains/logstaff/app/Controller/ApiController.php on line 18
+[28-Sep-2014 17:06:14] PHP Fatal error:  Call to undefined method SecurityComponent::unlockedActions() in /home/hansoftz/public_html/domains/logstaff/app/Controller/ApiController.php on line 18
+[28-Sep-2014 17:08:36] PHP Fatal error:  Call to undefined method SecurityComponent::unlockedActions() in /home/hansoftz/public_html/domains/logstaff/app/Controller/ApiController.php on line 18
+[02-Oct-2014 12:35:30] PHP Fatal error:  Call to a member function create() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 39
+[02-Oct-2014 12:36:22] PHP Fatal error:  Call to a member function create() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 39
+[02-Oct-2014 12:47:53] PHP Fatal error:  Call to a member function saveActivities() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Controller/ApiController.php on line 104
+[02-Oct-2014 12:59:43] PHP Fatal error:  Call to a member function saveActivities() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Controller/ApiController.php on line 103
+[02-Oct-2014 13:07:38] PHP Fatal error:  Call to a member function saveActivities() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Controller/ApiController.php on line 103
+[02-Oct-2014 13:09:36] PHP Fatal error:  Call to a member function saveActivities() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Controller/ApiController.php on line 103
+[04-Oct-2014 12:55:29] PHP Fatal error:  Call to undefined function  gettimebyuser() in /home/hansoftz/public_html/domains/logstaff/app/Controller/TimesheetsController.php on line 23
+[04-Oct-2014 19:39:43] PHP Fatal error:  Call to a member function paginate() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Controller/TimesheetsController.php on line 27
+[05-Oct-2014 00:34:29] PHP Warning:  Unexpected character in input:  '\' (ASCII=92) state=1 in /home/hansoftz/public_html/domains/logstaff/app/Controller/ActivitiesController.php on line 51
+[05-Oct-2014 00:34:29] PHP Warning:  Unexpected character in input:  '\' (ASCII=92) state=1 in /home/hansoftz/public_html/domains/logstaff/app/Controller/ActivitiesController.php on line 52
+[05-Oct-2014 00:34:29] PHP Warning:  Unexpected character in input:  '\' (ASCII=92) state=1 in /home/hansoftz/public_html/domains/logstaff/app/Controller/ActivitiesController.php on line 59
+[05-Oct-2014 00:34:54] PHP Fatal error:  Call to undefined method DateTime::add() in /home/hansoftz/public_html/domains/logstaff/app/Controller/ActivitiesController.php on line 59
+[05-Oct-2014 00:45:38] PHP Fatal error:  [] operator not supported for strings in /home/hansoftz/public_html/domains/logstaff/app/Controller/ActivitiesController.php on line 57
+[05-Oct-2014 20:36:10] PHP Warning:  Unexpected character in input:  ''' (ASCII=39) state=1 in /home/hansoftz/public_html/domains/logstaff/app/Controller/ApiController.php on line 83
+[05-Oct-2014 20:36:10] PHP Parse error:  syntax error, unexpected $end, expecting ']' in /home/hansoftz/public_html/domains/logstaff/app/Controller/ApiController.php on line 83
+[07-Oct-2014 12:19:30] PHP Fatal error:  Call to a member function send() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Controller/UsersController.php on line 186
+[07-Oct-2014 12:24:32] PHP Fatal error:  Call to a member function load() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Controller/AppController.php on line 62
+[08-Oct-2014 22:35:27] PHP Warning:  Unexpected character in input:  ''' (ASCII=39) state=1 in /home/hansoftz/public_html/domains/logstaff/app/Controller/ApiController.php on line 218
+[08-Oct-2014 22:35:27] PHP Parse error:  syntax error, unexpected $end in /home/hansoftz/public_html/domains/logstaff/app/Controller/ApiController.php on line 218
+[10-Oct-2014 15:49:25] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:49:54] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:50:09] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:50:15] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:53:01] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:53:49] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:54:07] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:54:18] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:54:33] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:54:46] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:55:01] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:55:07] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:55:22] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:55:34] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:55:35] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:55:41] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:55:42] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:55:53] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:55:53] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:56:03] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:56:04] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:56:14] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:56:15] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:56:26] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:56:26] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:56:40] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:56:40] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:56:47] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:56:47] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:57:00] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:57:06] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:57:07] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:57:17] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:57:18] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:57:30] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:57:30] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:57:31] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:57:38] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:57:39] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:57:39] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:57:54] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:57:54] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:57:55] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:58:02] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:58:02] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:58:03] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:58:15] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:58:16] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:58:16] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:58:21] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:58:22] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:58:23] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:58:38] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:58:39] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:58:40] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:58:45] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:58:46] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:58:46] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:59:06] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:59:07] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:59:08] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:59:12] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:59:13] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:59:13] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:59:34] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:59:35] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:59:36] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:59:43] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:59:44] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 15:59:45] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:00:01] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:00:01] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:00:02] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:00:10] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:00:12] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:00:13] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:00:36] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:00:36] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:00:37] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:00:42] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:00:42] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:00:43] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:01:02] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:01:03] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:01:04] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:01:11] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:01:12] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:01:13] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:01:28] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:01:28] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:01:29] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:01:39] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:01:41] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:01:42] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:02:01] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:02:02] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:02:03] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:02:10] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:02:11] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:02:15] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:02:31] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:02:32] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:02:33] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:02:39] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:02:40] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:02:41] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:02:56] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:02:57] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:02:58] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:03:05] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:03:06] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:03:06] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:03:17] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:03:18] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:03:19] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:03:24] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:03:25] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:03:25] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:03:39] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:03:40] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:03:40] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:03:45] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:03:46] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:03:47] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:04:01] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:04:02] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:04:02] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:04:10] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:04:11] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:04:13] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:04:24] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:04:24] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:04:25] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:04:32] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:04:32] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:04:33] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:04:51] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:04:51] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:04:52] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:05:02] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:05:03] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:05:04] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:05:28] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:05:30] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:05:31] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:05:42] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:05:43] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:05:44] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:06:09] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:06:11] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:06:12] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:06:21] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:06:22] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:06:23] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:06:42] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:06:43] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:06:43] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:06:53] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:06:54] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:06:54] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:07:10] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:07:11] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:07:12] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:07:23] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:07:24] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:07:25] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:07:40] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:07:40] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:07:41] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:07:46] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:07:47] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:07:48] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:08:11] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:08:11] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:08:12] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 65
+[10-Oct-2014 16:08:17] PHP Parse error:  syntax error, unexpected $end in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 81
+[10-Oct-2014 16:17:41] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 62
+[10-Oct-2014 16:29:00] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 62
+[10-Oct-2014 16:31:00] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 62
+[10-Oct-2014 16:33:00] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 62
+[10-Oct-2014 16:34:59] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 62
+[10-Oct-2014 16:36:59] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 62
+[10-Oct-2014 16:39:00] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 62
+[10-Oct-2014 16:40:45] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 62
+[10-Oct-2014 16:45:41] PHP Fatal error:  Call to a member function save() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 62
+[15-Oct-2014 12:47:34] PHP Fatal error:  Call to undefined function  apache_request_headers() in /home/hansoftz/public_html/domains/logstaff/app/Controller/ToolsController.php on line 79
+[15-Oct-2014 13:16:08] PHP Fatal error:  Unsupported operand types in /home/hansoftz/public_html/domains/logstaff/app/View/Helper/ImageHelper.php on line 107
+[17-Oct-2014 19:44:11] PHP Parse error:  syntax error, unexpected '}' in /home/hansoftz/public_html/domains/logstaff/app/Controller/TimesheetsController.php on line 85
+[18-Oct-2014 00:09:51] PHP Fatal error:  Cannot use object of type stdClass as array in /home/hansoftz/public_html/domains/logstaff/app/Controller/ActivitiesController.php on line 92
+[21-Oct-2014 23:02:59] PHP Fatal error:  Call to undefined method OrganizationsController::site_url() in /home/hansoftz/public_html/domains/logstaff/app/Controller/OrganizationsController.php on line 74
+[22-Oct-2014 18:32:32] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'SplFileObject::__construct(/home/hansoftz/public_html/domains/logstaff/app/tmp/cache/persistent/myapp_cake_core_default_en-us) [<a href='splfileobject.--construct'>splfileobject.--construct</a>]: failed to open stream: No such file or directory' in /home/hansoftz/public_html/domains/logstaff/lib/Cake/Cache/Engine/FileEngine.php:278
+Stack trace:
+#0 /home/hansoftz/public_html/domains/logstaff/lib/Cake/Cache/Engine/FileEngine.php(278): SplFileObject->__construct('/home/hansoftz/...', 'r')
+#1 /home/hansoftz/public_html/domains/logstaff/lib/Cake/Cache/Engine/FileEngine.php(235): FileEngine->_clearDirectory('/home/hansoftz/...', 1413982900, 1413982891)
+#2 /home/hansoftz/public_html/domains/logstaff/lib/Cake/Cache/Engine/FileEngine.php(100): FileEngine->clear(true)
+#3 /home/hansoftz/public_html/domains/logstaff/lib/Cake/Cache/Cache.php(184): FileEngine->gc()
+#4 /home/hansoftz/public_html/domains/logstaff/lib/Cake/Cache/Cache.php(151): Cache::_buildEngine('_cake_cor in /home/hansoftz/public_html/domains/logstaff/lib/Cake/Cache/Engine/FileEngine.php on line 278
+[27-Oct-2014 11:02:13] PHP Fatal error:  Call to a member function resize() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Controller/OrganizationsController.php on line 83
+[27-Oct-2014 12:23:38] PHP Fatal error:  Call to a member function resize() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Controller/OrganizationsController.php on line 177
+[27-Oct-2014 12:24:17] PHP Parse error:  syntax error, unexpected $end in /home/hansoftz/public_html/domains/logstaff/app/Controller/OrganizationsController.php on line 84
+[02-Nov-2014 19:40:24] PHP Fatal error:  Call to a member function find() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Controller/UsersController.php on line 250
+[11-Jan-2015 07:00:36 Etc/GMT] PHP Fatal error:  Call to a member function find() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Controller/RolesController.php on line 18
+[12-Jan-2015 05:51:18 Etc/GMT] PHP Fatal error:  Call to a member function send() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Controller/InvitesController.php on line 52
+[12-Jan-2015 10:14:20 Etc/GMT] PHP Fatal error:  Call to a member function create() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Controller/UsersController.php on line 179
+[15-Jan-2015 05:47:14 Etc/GMT] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' in /home/hansoftz/public_html/domains/logstaff/app/Controller/TimesheetsController.php on line 53
+[28-Feb-2015 10:43:20 Etc/GMT] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'SplFileObject::__construct(/home/hansoftz/public_html/domains/logstaff/app/tmp/cache/models/myapp_cake_model_default_hansoftz_logstaff_projects): failed to open stream: No such file or directory' in /home/hansoftz/public_html/domains/logstaff/lib/Cake/Cache/Engine/FileEngine.php:278
+Stack trace:
+#0 /home/hansoftz/public_html/domains/logstaff/lib/Cake/Cache/Engine/FileEngine.php(278): SplFileObject->__construct('/home/hansoftz/...', 'r')
+#1 /home/hansoftz/public_html/domains/logstaff/lib/Cake/Cache/Engine/FileEngine.php(235): FileEngine->_clearDirectory('/home/hansoftz/...', 1425120200, 1425120190)
+#2 /home/hansoftz/public_html/domains/logstaff/lib/Cake/Cache/Engine/FileEngine.php(100): FileEngine->clear(true)
+#3 /home/hansoftz/public_html/domains/logstaff/lib/Cake/Cache/Cache.php(184): FileEngine->gc()
+#4 /home/hansoftz/public_html/domains/logstaff/lib/Cake/Cache/Cache.php(151): Cache::_buildEngine('_cake_model_')
+#5 /home/hansoftz/public_html/domains/logsta in /home/hansoftz/public_html/domains/logstaff/lib/Cake/Cache/Engine/FileEngine.php on line 278
+[28-Feb-2015 12:21:40 Etc/GMT] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'SplFileObject::__construct(/home/hansoftz/public_html/domains/logstaff/app/tmp/cache/models/myapp_cake_model_default_hansoftz_logstaff_activities): failed to open stream: No such file or directory' in /home/hansoftz/public_html/domains/logstaff/lib/Cake/Cache/Engine/FileEngine.php:278
+Stack trace:
+#0 /home/hansoftz/public_html/domains/logstaff/lib/Cake/Cache/Engine/FileEngine.php(278): SplFileObject->__construct('/home/hansoftz/...', 'r')
+#1 /home/hansoftz/public_html/domains/logstaff/lib/Cake/Cache/Engine/FileEngine.php(235): FileEngine->_clearDirectory('/home/hansoftz/...', 1425126100, 1425126090)
+#2 /home/hansoftz/public_html/domains/logstaff/lib/Cake/Cache/Engine/FileEngine.php(100): FileEngine->clear(true)
+#3 /home/hansoftz/public_html/domains/logstaff/lib/Cake/Cache/Cache.php(184): FileEngine->gc()
+#4 /home/hansoftz/public_html/domains/logstaff/lib/Cake/Cache/Cache.php(151): Cache::_buildEngine('_cake_model_')
+#5 /home/hansoftz/public_html/domains/logs in /home/hansoftz/public_html/domains/logstaff/lib/Cake/Cache/Engine/FileEngine.php on line 278
+[03-Mar-2015 03:45:21 Etc/GMT] PHP Fatal error:  Call to a member function jvm2date() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Controller/ApiController.php on line 187
+[03-Mar-2015 04:03:33 Etc/GMT] PHP Fatal error:  Call to a member function jvm2date() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Controller/ApiController.php on line 187
+[03-Mar-2015 06:05:41 Etc/GMT] PHP Fatal error:  Call to a member function jvm2date() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Controller/ApiController.php on line 187
+[03-Mar-2015 06:13:40 Etc/GMT] PHP Fatal error:  Call to a member function jvm2date() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Controller/ApiController.php on line 187
+[03-Mar-2015 15:13:30 Etc/GMT] PHP Fatal error:  Call to a member function jvm2date() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Controller/ApiController.php on line 187
+[03-Mar-2015 15:21:33 Etc/GMT] PHP Fatal error:  Call to a member function jvm2date() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Controller/ApiController.php on line 187
+[03-Mar-2015 16:14:50 Etc/GMT] PHP Fatal error:  Call to a member function jvm2date() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Controller/ApiController.php on line 187
+[03-Mar-2015 16:21:48 Etc/GMT] PHP Fatal error:  Call to a member function jvm2date() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Controller/ApiController.php on line 187
+[03-Mar-2015 16:38:59 Etc/GMT] PHP Fatal error:  Call to a member function jvm2date() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Controller/ApiController.php on line 187
+[07-May-2015 07:09:12 Etc/GMT] PHP Fatal error:  Call to undefined method ApiController::findByTimesheetId() in /home/hansoftz/public_html/domains/logstaff/app/Controller/ApiController.php on line 333
+[11-May-2015 15:47:36 UTC] PHP Fatal error:  Class 'CakeTime' not found in /home/hansoftz/public_html/domains/logstaff/app/Model/Timesheet.php on line 116
+[11-May-2015 15:49:18 UTC] PHP Fatal error:  Class 'CakeTime' not found in /home/hansoftz/public_html/domains/logstaff/app/Model/Screenshot.php on line 37
+[11-May-2015 15:49:18 UTC] PHP Fatal error:  Class 'CakeTime' not found in /home/hansoftz/public_html/domains/logstaff/app/Model/Timesheet.php on line 119
+[11-May-2015 15:49:44 UTC] PHP Fatal error:  Class 'CakeTime' not found in /home/hansoftz/public_html/domains/logstaff/app/Model/Timesheet.php on line 116
+[11-May-2015 15:50:21 UTC] PHP Fatal error:  Class 'CakeTime' not found in /home/hansoftz/public_html/domains/logstaff/app/Model/Screenshot.php on line 37
+[11-May-2015 15:50:22 UTC] PHP Fatal error:  Class 'CakeTime' not found in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 90
+[11-May-2015 15:51:07 UTC] PHP Fatal error:  Class 'CakeTime' not found in /home/hansoftz/public_html/domains/logstaff/app/Model/Screenshot.php on line 37
+[11-May-2015 15:51:07 UTC] PHP Fatal error:  Class 'CakeTime' not found in /home/hansoftz/public_html/domains/logstaff/app/Model/Timesheet.php on line 119
+[11-May-2015 15:51:20 UTC] PHP Fatal error:  Class 'CakeTime' not found in /home/hansoftz/public_html/domains/logstaff/app/Model/Screenshot.php on line 37
+[11-May-2015 15:51:20 UTC] PHP Fatal error:  Class 'CakeTime' not found in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 90
+[11-May-2015 15:52:59 UTC] PHP Fatal error:  Class 'CakeTime' not found in /home/hansoftz/public_html/domains/logstaff/app/Model/Timesheet.php on line 116
+[11-May-2015 15:54:07 UTC] PHP Fatal error:  Class 'CakeTime' not found in /home/hansoftz/public_html/domains/logstaff/app/Model/Screenshot.php on line 37
+[11-May-2015 15:54:08 UTC] PHP Fatal error:  Class 'CakeTime' not found in /home/hansoftz/public_html/domains/logstaff/app/Model/Timesheet.php on line 119
+[11-May-2015 15:54:21 UTC] PHP Fatal error:  Class 'CakeTime' not found in /home/hansoftz/public_html/domains/logstaff/app/Model/Screenshot.php on line 37
+[11-May-2015 15:54:23 UTC] PHP Fatal error:  Class 'CakeTime' not found in /home/hansoftz/public_html/domains/logstaff/app/Model/Activity.php on line 90
+[14-May-2015 13:21:09 UTC] PHP Fatal error:  Class 'AppController' not found in /home/hansoftz/public_html/domains/logstaff/app/Controller/ApiController.php on line 10
+[10-Jun-2015 10:37:09 UTC] PHP Fatal error:  Call to a member function getName() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Controller/OrganizationsController.php on line 201
+[10-Jun-2015 10:37:52 UTC] PHP Fatal error:  Call to a member function getName() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Controller/OrganizationsController.php on line 201
+[12-Jun-2015 10:45:40 Asia/Kolkata] PHP Fatal error:  Call to a member function exists() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Controller/OrganizationsUsersController.php on line 19
+[12-Jun-2015 10:45:56 Asia/Kolkata] PHP Fatal error:  Call to a member function exists() on a non-object in /home/hansoftz/public_html/domains/logstaff/app/Controller/OrganizationsUsersController.php on line 19

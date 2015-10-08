@@ -1,0 +1,147 @@
+<div class="bc">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/organizations" class="_a">Organizations</a></li>                
+        <li><a href="" class="_a"><%= data.org.oz.title %></a></li>
+    </ul>  
+  </div>
+ 
+
+<div class="col-12">
+     
+         <div id="org">
+            <div class="u-info">
+                <div class="u-img">
+                   <img alt="logo" src="/<%= data.org.oz.logo %>" height="150"/>
+                </div>
+                <span id="<%= data.org.oz.id %>" class="_ed"><%= data.org.oz.title %></span>
+              
+                 <div class="pull-right">
+                    <a title="Choose a Plan for this organization" href="#" class="b-green xs"><i class="fa fa-chain"></i> Choose a plan</a>
+                    <a title="Manage the billing for this organization" href="#" class="b-red xs"><i class="fa fa-credit-card"></i> Manage billing</a>
+                 </div>
+                 <div class="u-cnt"> 
+                     <div id="<%= data.org.oz.id %>" class="ded"><%= data.org.oz.description %></div>
+                 </div>
+                 <hr>
+                
+             </div><!-- End u-info --> 
+             <div class="info-bar">
+                  <ul>
+                      <li><a href="#"><span class="value">Standard Timezone</span><span class="labl"><%= data.org.tz.title %></span></a></li>
+                      <li><a href="#"><span class="value">User (s)</span><span class="labl"><%= data.org.uz.length %></span></a></li>
+                      <li><a href="#"><span class="value">Project(s)</span><span class="labl"><%= data.org.pz.length %></span></a></li>
+                      <li><a href="#"><span class="value">Created On</span><span class="labl"><%= data.org.oz.created %></span></a></li>
+
+                  </ul>
+              </div>   
+        </div> <!-- End Org --> 
+        
+        <a href="#" class="_su button fl-r show-pop"><i class="fa fa-icon-user"></i> Add Member</a>
+        <h2>Users</h2>
+             <% if(data.org.uz){ %>
+             <div class="ulist">
+                    <%  for(var i=0;i<data.org.uz.length;i++){ var user=data.org.uz[i] %>
+                        <div class="uitem">
+                            <% if(user.image){ %><div class="image"><img src="/<%= user.image %>" /></div><% }else{ %>
+                         <div class="avt"><%= user.in %></div>
+                         <% } %>
+                         <div class="uinfo"><%= user.display %><br/>@<%= user.user %></div>
+                         <div class="uinfo"><code class="edR" id="<%= user.ouid %>"><%= user.role %></code></div>
+                        </div>
+                    <%  } %>
+              </div>
+             <%  } %>
+    
+             <h2>Projects</h2>
+             
+             <% if(data.org.pz){ %>
+             <div class="ulist">
+                    <%  for(var i=0;i<data.org.pz.length;i++){ var pro=data.org.pz[i] %>
+                        <div class="uitem">
+                            <div class="uinfo"><div acts="ut" id="<%= pro.id %>" class="ptitle"><%= pro.title %></div><br/><%= (pro.status)?'Active':'Inactive' %></div>
+                        </div>
+                    <%  } %>
+              </div>
+             <%  } %>
+             
+</div>
+<script type="text/javascript">
+$j(document).ready(function() {
+     $j('._ed').editable(site('organizations/sfu/'), {
+         submitdata: {'f':'title'},
+         type      : 'text',
+         cancel    : 'Cancel',
+         submit    : 'OK',
+         indicator : 'Saving...',
+         tooltip   : 'Click to edit.'
+     });
+     $j('.ptitle').editable(site('projects/sfu/'), {
+         submitdata: {'f':'title'},
+         type      : 'text',
+         cancel    : 'Cancel',
+         submit    : 'OK',
+         indicator : 'Saving...',
+         tooltip   : 'Click to edit.'
+     });
+     $j('.ded').editable(site('organizations/sfu/'), {
+         submitdata: {'f':'description'},
+         type      : 'textarea',
+         cancel    : 'Cancel',
+         submit    : 'OK',
+         indicator : 'Saving...',
+         tooltip   : 'Click to edit.'
+     });
+     $j('.edR').editable(site('organizationsUsers/sfu'), {
+         submitdata: {'f':'role_id'},
+         type      : 'select',loadurl :site('roles'),
+         cancel    : 'Cancel',
+         submit    : 'OK',
+         indicator : 'Saving...',
+         tooltip   : 'Click to edit.'
+     });
+     var settings = {
+            trigger:'click',
+            title:'Searh Member',
+            content: new EJS({url: root+'templates/org/pop.am.ejs'}).render(),
+            width:320,						
+            multi:true,						
+            closeable:false,
+            placement:'bottom-left',
+            delay:300,
+            padding:true
+     };
+//     var content = new EJS({url: root+'templates/err/404.ejs'}).render();
+     $j('._su').webuiPopover(settings);	
+    
+     $j(document).on('keyup','._uk',function(){
+         var inp = $j(this).val();
+         if(!is_email(inp)){
+             call('users/search',{'k':$j(this).val(),org:'<%= data.org.oz.id %>'},function(r){ r=$j.parseJSON(r);
+                 $j('._smem').html(new EJS({url: root+'templates/usr/usr.auto.ejs'}).render({users:r}))
+             });
+         }else{
+             call('users/search',{'k':$j(this).val(),org:'<%= data.org.oz.id %>'},function(r){ r=$j.parseJSON(r);
+                 if(r.length){
+                     $j('._smem').html(new EJS({url: root+'templates/usr/usr.auto.ejs'}).render({users:r}))
+                 }else{
+                     var na = inp.split('@');
+                     $j('._smem').html(new EJS({url: root+'templates/usr/usr.add.ejs'}).render({email:inp,name:na[0]}))
+                 }
+             });
+            
+         }
+     });
+     
+ });
+</script>
+<style type="text/css">
+    .ulist{width: 100%; margin: 0 auto;}
+    .uitem{border-bottom:1px dotted #ccc; width: 100%;float: left;margin-bottom: 10px;padding: 10px;}
+    .uitem:last-child{border: none;}
+    .uitem .image{ width: 32px; display: block; float: left;}
+    .uitem .image img{ border-radius:3px;}
+    
+    .uinfo{float: left; display: block;margin-left:20px;}
+    .avt{color:#fff;font-size:16px;background: none repeat scroll 0 0 #1a4b85;border-radius: 3px;display: block;float: left;font-family: comic sans ms;font-weight: bold;height: 32px;line-height: 30px;text-align:center;text-transform: uppercase;width: 32px;}
+</style>

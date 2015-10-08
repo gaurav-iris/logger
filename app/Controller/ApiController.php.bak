@@ -1,0 +1,215 @@
+<?php
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+App::uses('AuthComponent', 'Controller/Component');
+
+class ApiController extends AppController{
+    
+    public $components = array('Auth', 'Session');
+    
+    public function beforeFilter() {
+        parent::beforeFilter();
+        $this->layout = 'ajax';
+        $this->Auth->allow();
+    }
+    
+    public function v1($method=''){
+        if(method_exists($this, $method)){
+            call_user_method($method, $this);
+        }else{
+            die(json_encode(array('error'=>'Server Error: Unknown request made!')));
+        }
+    }
+    
+    public function check(){
+        
+        if($this->request->is(array('post'))){
+            CakeLog::write('debug',  print_r($this->request->data,true));
+        }
+        CakeLog::write('debug',"Any resquest can enter the door");
+        echo "true";
+        exit;
+    }
+    
+    
+    public function startLogger(){
+         CakeLog::write('debug',  print_r($this->request->data,true));
+            $json = array();
+            $this->loadModel('Timesheet');
+            $post = $this->request->data;
+            if($this->request->is(array('post'))){
+                $this->Timesheet->create();
+                $data = array(
+                    'user_id'       =>  $post['id'],
+                    'project_id'    =>  $post['pid'],
+                    'session_key'   =>  $post['sessionid'],
+                    'start'         =>  $post['timestamp']
+                );
+                CakeLog::write('debug',"\n" .  print_r($data,true));
+                $this->timesheet = $this->Timesheet->save($data);
+            }
+      }
+      
+      public function saveActivity(){
+          if($this->request->is(array('post'))){
+              $this->loadModel('Timesheet');
+              $this->loadModel('Activity');
+                $post = $this->request->data;
+                $timeframs = trim($post['timeframe'],'|');
+                $timeframs = explode('|', $timeframs);
+               
+                $starttime = json_decode($timeframs[0]);
+                $endtime = end($timeframs);
+                $endtime = json_decode($endtime);
+                $this->Timesheet->create();
+                if(isset($post['sessionid']) && $post['sessionid']!=''){
+                    $timedata = array(
+                        'user_id'       =>  $post['id'],
+                        'project_id'    =>  $post['pid'],
+                        'session_key'   =>  $post['sessionid'],
+                        'start'         =>  $starttime->ts,
+                        'end'           =>  $endtime->ts,
+                        'duration'      =>  (strtotime($endtime->ts)-strtotime($starttime->ts))
+                    );
+                }
+
+                $timesheet = $this->Timesheet->save($timedata);
+                
+                $this->Activity->saveActivities($timeframs,$this->Timesheet->id);
+                echo "true";
+          }
+      }
+      
+      public function stopLogger(){
+            CakeLog::write('debug',  print_r("stoplogger" . $this->request->data,true));
+            $json = array();
+            $this->loadModel('Timesheet');
+            $post = $this->request->data;
+            if($this->request->is(array('post'))){
+                $this->Timesheet->create();
+                $data = array(
+                    'user_id'       =>  $post['id'],
+                    'project_id'    =>  $post['pid'],
+                    'session_key'   =>  $post['sessionid'],
+                    'end'         =>  $post['timestamp']
+                );
+                $this->timesheet = $this->Timesheet->save($data);
+                    if(isset($post['timeframe'])){
+                    $timeframs = trim($post['timeframe'],'|');
+                    $timeframs = explode('|', $timeframs);
+                    $this->Activity->saveActivities($timeframs,$this->Timesheet->id);
+                }
+            }
+      }
+      
+      public function saveScreen(){
+          CakeLog::write('debug',"\nScreenshot" .  print_r($this->request->data,true));
+          CakeLog::write('debug',"\nScreenshot" .  print_r($_FILES,true));
+          $this->loadModel('Timesheet');
+          $this->Timesheet->recursive = -1;
+          $post = $this->request->data;
+          $timesheet = $this->Timesheet->find('first',array(
+                'conditions'=>array(
+                    'session_key'=>$post['sessionid'],
+                    'project_id' =>$post['pid'],
+                    'user_id'    =>$post['id'],
+                ),
+                'order' =>  array('Timesheet.id' => 'desc')
+              ));
+          $image = 'files'.DS.'sc'.DS.date('d-m-Y').DS.$post['id'].DS;
+          $path = WWW_ROOT.$image;
+          if(!is_dir($path))
+              mkdir($path,0777,true);
+          $filename = $path . $_FILES['fileUpload']['name'];
+          move_uploaded_file($_FILES['fileUpload']['tmp_name'],$filename);
+          $timesheet['Timesheet']['screenshot'] = $image.$_FILES['fileUpload']['name'];
+          $this->Timesheet->save($timesheet['Timesheet']);
+          die(json_encode(array('status'=>true)));
+      }
+    public function test(){
+        
+        $this->loadModel('Timesheet');
+        $this->Timesheet->recursive = -1;
+        $timesheet = $this->Timesheet->find('first',array(
+                'conditions'=>array(
+                    'session_key'=>'DD48F66F5FF9CFD',
+                    'project_id' =>7,
+                    'user_id'    =>3,
+                ),
+                'order' =>  array('Timesheet.id' => 'desc')
+         ));
+          $timesheet['Timesheet']['screenshot'] = '/test/image/path/image.jpg';
+          $this->Timesheet->save($timesheet['Timesheet']);
+         print_r($timesheet);
+    }
+    private function login(){
+         CakeLog::write('debug', 'loggin'. print_r($this->request->data,true));
+        $json = array();
+        if ($this->request->is(array('post'))){
+            
+            $post = $this->request->data;
+            $this->loadModel('User');
+            $this->User->recursive = -1;
+            $user = $this->User->find('first', array(
+                'conditions' => array('User.username' => $post['id'])
+            ));
+            if($user['User']['password'] !== AuthComponent::password($post['pswd'])) {
+                die('false');
+            }else{
+                $nuser = array(
+                    'id'    =>  $user['User']['id'],
+                    'name'    =>  $user['User']['first_name'],
+                    'email' =>  $user['User']['email'],
+                    'time'  => 0,
+                    'image' => 'http://hansoftz.com/domains/logstaff/d/u/grv.jpg'
+                );
+                $json['status'] = 'true';
+                $json['user'] = $nuser;
+                $json['org'] = $this->getUserContent($user);
+            }
+            die(json_encode($json));
+          }
+          die(json_encode(array('error'=>'Not a valid action')));
+      }
+      
+      public function getUserContent($user){
+            $response = array();
+            
+            $this->loadModel('Organization');
+            
+            $response = array();
+            
+            $organisations = $this->Organization->findWithUserId($user['User']['id']);
+           
+            foreach($organisations as $key=>$org){
+                
+                $projectsResult = $this->Organization->findOrgUsrProject($org['Organization']['id'],$user['User']['id']);
+                $projects=array();
+                foreach($projectsResult as $prj){
+                    $projects[] = array(
+                        'id'        => $prj['Project']['id'],
+                        'title'     => $prj['Project']['title'],
+                        'time'      => 0
+                    );
+                }
+                
+                $response[] = array(
+                    'id'    =>  $org['Organization']['id'],
+                    'name'  =>  $org['Organization']['title'],
+                    'projects'=>$projects
+                );
+                
+            }
+            $this->Organization->Behaviors->load('Containable');
+            $this->Organization->recursive = 2;
+            return $response;
+      }
+   
+      
+    
+}
+?>

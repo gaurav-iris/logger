@@ -1,0 +1,2 @@
+1441438984
+a:2:{s:10:"project_id";a:5:{s:4:"type";s:10:"biginteger";s:4:"null";b:0;s:7:"default";N;s:6:"length";i:20;s:8:"unsigned";b:0;}s:7:"user_id";a:5:{s:4:"type";s:10:"biginteger";s:4:"null";b:0;s:7:"default";N;s:6:"length";i:20;s:8:"unsigned";b:0;}}

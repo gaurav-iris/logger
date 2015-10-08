@@ -1,0 +1,20 @@
+<div class="bc">
+    <a href="/">Home</a> » <a class="active" href="/activities">Profile</a>
+</div>
+<div class="col-12 act">
+    <form action="" method="post" enctype="multipart/form-data">
+        <ul>
+            <li><label>Username</label><input type="text" name="un" value="<%= data.u.un %>" /></li>
+            <li><label>First Name</label><input type="text" name="un" value="<%= data.u.fn %>" /></li>
+            <li><label>Last Name</label><input type="text" name="un" value="<%= data.u.ln %>" /></li>
+            <li><label>Email</label><input type="text" name="un" value="<%= data.u.em %>" /></li>
+            <li><label>Role</label><input type="text" name="un" value="<%= data.u.rl %>" /></li>
+            <li><label>Joined</label><input type="text" name="un" value="<%= data.u.cr %>" /></li>
+            <li><label>Username</label>
+                <select name="tz">
+                    <% for(i in data.t){  %><option value="<%= i %>"><%= data.t[i] %></option> <% } %>
+                </select>
+            </li>
+        </ul>
+    </form>
+</div>

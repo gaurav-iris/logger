@@ -1,0 +1,87 @@
+             <div class="bc">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Profile</a></li>
+                </ul>  
+            </div>
+               <div class="col-12"> 
+                   <div class="col-3">
+                        <div class="panel panel-default">
+                                    <!-- Start .panel -->
+                                    <div class="panel-heading">
+                                        <h4><a href="#"><img width="25" height="25" src="../img/grv.jpg" alt="Gaurav Mehra"/> gauravmehra1987</a></h4>
+                                    </div>
+                                <div class="panel-body p0">
+                                   <ul class="_lst">
+                                        <li><a href="#">Account settings </a></li>
+                                        <li><a class="active" href="#">Profile</a></li>
+                                        <li><a href="#">Account settings </a></li>
+                                        <li><a href="#">Profile</a></li>
+                                        <li><a href="#">Account settings </a></li>
+                                        <li><a href="#">Profile</a></li>
+                                     </ul>   
+                                </div>
+                            </div>
+                    </div><!-- /col-3 -->
+
+                   <div class="col-9">
+                        <div class="panel panel-default pd0">
+                                    <!-- Start .panel -->
+                                    <div class="panel-heading">
+                                        <h4><i class="fa fa-user"></i> Update Profile</h4>
+                                    </div>
+                                <div class="panel-body _pf">
+                                      <form role="form">
+                                          <div class="fg">
+                                              <label class="_db">Profile picture</label>
+                                              <img width="80" height="80" class="avatar" alt="grv" src="../img/grv.jpg"/>
+                                              <div class="av-u">
+                                                <a href="#" class="_up"><label>Upload new picture<input class="uploadme" type="file" multiple="false"/></label></a>
+                                                  <div class="_us default">
+                                                    <div class="fileList"></div>
+                                                    <input type="hidden" class="fileInput" name="user[image]" />
+                                                  </div>
+                                                </div>                                           
+                                          </div>
+                                          <div class="fg">
+                                              <label class="_db">First Name</label>
+                                              <span><input type="text" placeholder="Sandeep"/></span>
+                                          </div>
+                                           <div class="fg">
+                                              <label class="_db">Last Name</label>
+                                              <span><input type="text" placeholder="kaur"/></span>
+                                          </div>
+                                           <div class="fg">
+                                               <label class="_db">Email</label>
+                                              <span><input type="email" placeholder="email@gmail.com"/></span>
+                                           </div>
+                                          <div class="fg">
+                                             
+                                              <span><input class="b-red" type="submit" value="submit"/></span>
+                                           </div>
+                                      </form>
+                                 
+                                </div>
+                            </div>
+                        
+                    </div><!-- /col-9 -->
+               </div> <!-- /col-12 -->
+      <div id="ftr">        
+<!--           <div class="pt">
+                <h3>We Build Smarter and Highly Usable Stuff! - We hope that you enjoy it.</h3>
+                <a href="#">Get more about</a>
+            </div>-->
+            <div class="_cr">
+                <div class="col-7">                     
+                        <p> &copy;  2014 <a href="index.html">Logstaff.com</a>, ALL Rights Reserved.   <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="contact.html">Contact us</a>   </p>
+                </div>
+<!--                <div class="col-5">  
+                    <a class="pull-right" href="index.html"><span>L</span>ogstaff</a>
+                </div>-->
+            </div>
+        
+    </div>
+    
+               <script type="text/javascript">
+                   jQuery('.uploadme').upload({'post':'/tools/upload','input':'.fileInput'});
+               </script>

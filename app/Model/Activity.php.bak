@@ -1,0 +1,52 @@
+<?php
+App::uses('AppModel', 'Model');
+/**
+ * Activity Model
+ *
+ * @property Timesheet $Timesheet
+ */
+class Activity extends AppModel {
+
+/**
+ * Display field
+ *
+ * @var string
+ */
+	public $displayField = 'notes';
+
+
+	//The Associations below have been created with all possible keys, those that are not needed can be removed
+
+/**
+ * belongsTo associations
+ *
+ * @var array
+ */
+	public $belongsTo = array(
+		'Timesheet' => array(
+			'className' => 'Timesheet',
+			'foreignKey' => 'timesheet_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		)
+	);
+        
+        public function saveActivities($timeframs,$timesheet_id){
+            if($timeframs){
+                foreach($timeframs as $item){
+                    $frame = json_decode($item);
+                    $this->create();
+                    $this->save(
+                            array(
+                                'timesheet_id'  =>  $timesheet_id,
+                                'keystrokes'   =>   $frame->keysArr,
+                                'mouseclicks'   =>  $frame->mouseArr,
+                                'start'         =>  date('Y-m-d H:i:s', strtotime('-1 minutes', strtotime($frame->ts))),
+                                'end'           =>  $frame->ts
+                            )
+                    );
+                }
+             }
+        }
+}

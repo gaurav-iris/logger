@@ -1,0 +1,58 @@
+<div id="hdr">               
+                <div id="logo"><a href="<%= config.home %>"><span>l</span>ogstaff</a></div>
+<!--                   <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                   </button>-->
+                <div class="menu navbar-collapse collapse">
+                                 <ul>
+                                    <li><a href="<%= config.home %>">Home</a></li>
+                                    <li><a href="<%= config.home %>activities">Activities</a></li>
+                                    <li><a href="<%= config.home %>timesheets">Timesheet</a></li>
+                                    <li><a href="<%= config.home %>organizations">Organization</a></li>
+                                    <li><a href="<%= config.home %>projects">Projects</a></li>
+                                    <li><a href="<%= config.home %>reports">Reports</a></li>
+                                </ul>             
+                </div><!-- nav -->
+                <ul class="mu-r">
+                        <li class="vert"></li>
+                        <li><a href="calendar.html"><i class="fa fa-calendar"></i><span class="l-red">calendar</span></a></li>
+                        <li class="vert"></li>
+                        <li><a href="#"><i class="fa fa-comments"></i><span class="l-red">2</span></a></li>
+                        <li class="vert"></li>
+                        <li><a href="#"><i class="fa fa-envelope-o"></i><span class="l-red">2 New</span></a></li>
+                        <li class="vert"></li>
+                        <li><a id="pg-l" href="#"><i class="fa fa-refresh"></i><span class="l-info">Update</span></a></li>
+                        <li class="vert"></li>
+                        
+                        
+                        <li class="dropdown tooltip-demo gb_h"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <%= player.usr %> <span class="caret"></span></a>
+                            <ul class="dropdown-menu gb_u">
+                                <li>
+                                    <div style="width: 314px">
+                                        <div class="modal-header">
+                                            <h3><%= player.fn %> <%= player.ln %></h3>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row-fluid">
+                                                <div class="span3">
+                                                    <img class="thumbnail" alt="" src="/<%= player.imx50 %>"/>
+                                                </div>
+                                                <div class="span9">
+                                                    <a href="<%= config.home %>profile"><i class="fa fa-user"></i>Profile</a>
+                                                    <a href="#"><i class="fa fa-cog"></i>Settings</a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn" href="<%= config.home %>logout"><i class="fa fa-power-off"></i>Log Out</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                     </li>
+                </ul>
+            </div>

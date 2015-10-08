@@ -1,0 +1,197 @@
+<div class="col-11">
+     <h1><i class="fa fa-sun-o"></i>create new Organization</h1>
+        <div class="_ml">
+            <ul>
+                <li><a href="#org-step1" class="active">define organization <i class="fa fa-chevron-right"></i></a></li>
+                <li><a href="#org-step2">define projects <i class="fa fa-chevron-right"></i></a></li>
+                <li><a href="#">invite users <i class="fa fa-chevron-right"></i></a></li>
+                <li><a href="#">choose plan <i class="fa fa-chevron-right"></i></a></li>
+            </ul>
+        </div><!-- _ml -->
+        <div class="_mr">
+            <div class="_mrc">  
+                <div style="display: none;" id="org-step1">
+                    <form id="org-st1" action="" method="post" enctype="multipart/form-data" role="form">
+                    <div class="fg">
+                        <label>Title</label>
+                        <span><input aria-required="true" data-msg-required="Please provide an Organization name." required="true" type="text" name="org[title]" placeholder="Title"/></span>
+                    </div>
+                    <div class="fg">  
+                      <label>Time zone</label>
+                      <span>
+                          <select aria-required="true" data-msg-required="Time zone can't be left empty" class="_tm" name="org[timezone_id]">
+                              <option value=""> Choose Time zone</option>
+                          </select>
+                      </span>
+                     </div>
+                     <div class="fg">  
+                      <label>Organization Logo</label>
+                      <span>
+                          <input type="file" multiple="false" class="uploadme" name="logo" />
+                          <div class="fileList">
+                              <ul></ul>
+                          </div>
+                          <input type="hidden" class="fileInput" name="org[logo]" />
+                      </span>
+                     </div>
+
+                    <div class="fg">
+                        <label>Brief Description</label>
+                        <span><textarea name="org[description]" rows="3"></textarea></span>
+                    </div>
+
+                    <div class="fg">
+                        <label> &nbsp;</label>
+                        <span><input type="submit" id="orgst1" name="saveOrg" value="Next" class="b-red"/></span>
+                    </div>
+                </form>
+                </div>
+         
+            <div style="display: none;" id="org-step2">
+                <h2>Create projects for your organization</h2>
+               
+                <form id="org-st2" action="" method="post">
+                    <div class="prjWrap">
+                        <div class="fg">
+                            <label></label>
+                            <span><input aria-required="true" data-msg-required="Atleast one project is required!" required="true" type="text" name="Project[][title]" placeholder="Add Project Title"/></span>
+                        </div>
+                    </div>
+                    <div class="fg">
+                        <label> &nbsp;</label>
+                        <span><input type="button" id="addp" value="Add More Project" class=""/></span>
+                    </div>
+                    <div class="fg">
+                        <label> &nbsp;</label>
+                        <span><input type="submit" id="orgst2" name="saveOrg" value="Next" class="b-red"/></span>
+                    </div>
+                    <input type="hidden" name="o_id" value="0" />
+                </form>
+            </div>
+            <div style="display: block;" id="org-step3">
+                <h2>Invite Memeber to your Organization</h2>
+                <form id="org-st3" action="" method="post">
+                  <div class="usrWrap">
+                        <div class="fg">
+                           <span>
+                                <input aria-required="true"  type="email" name="User[0][email]" placeholder="Email address"/>
+                                <select  id="ursRoles" name="User[0][role_id]">
+                                    <option value="1">Administrator</option>
+                                    <option value="2">Moderator</option>
+                                    <option value="3">User</option>
+                                </select>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="fg">
+                        <label>&nbsp;</label>
+                        <span><input type="button" id="addu" value="Invite More Users" class=""/></span>
+                    </div>
+                    <div class="fg">
+                        <label>&nbsp;</label>
+                        <span><input type="submit" id="orgst3" name="saveUser" value="Next" class="b-red"/></span>
+                    </div>
+                    <input type="hidden" name="o_id" value="0" />
+                </form>
+            </div>
+    </div><!-- _mr -->
+</div>
+</div>
+<script type="text/javascript">
+    jQuery(document).ready(function(){
+        var o_id = 0;
+        jQuery.post(site('timezones'),{},function(r){
+            r=jQuery.parseJSON(r);
+            html = ''; for(i in r) html += '<option value="' + i + '">' + r[i] + '</option>';
+            jQuery('._tm').append(html);
+        });
+        jQuery('.uploadme').upload({'post':'/tools/upload','input':'.fileInput'});
+        jQuery('#org-st1').validate({
+             submitHandler: function(form) {
+                jQuery.ajax({
+                    type:'post',
+                    url:site('organizations/create'),
+                    data:jQuery( form ).serialize(),
+                    success:function(r){ r=JSON.parse(r);
+                        if(r.status){
+                            o_id = r.id;
+                            jQuery('input[name=o_id]').val(r.id);
+                        }
+                    }
+                });
+                next('#org-step1','#org-step2');
+                return false; 
+             }
+        });
+        
+        var roles = "";
+        jQuery('#org-st2').validate({
+            submitHandler: function(form) {
+                jQuery.ajax({
+                    type:'post',
+                    url:site('projects/create'),
+                    data:jQuery(form).serialize(),
+                    success:function(r){ r=JSON.parse(r);
+                        if(r.status){
+                            next('#org-step2','#org-step3');
+                            jQuery.post(site('roles'),{},function(r){
+                                r=jQuery.parseJSON(r);
+                                html = ''; for(i in r) html += '<option value="' + i + '">' + r[i] + '</option>';
+                                jQuery('#ursRoles').html(html);
+                                roles = html;
+                            });
+                        }
+                    }
+                });
+                return false; 
+             }
+        });
+        
+        jQuery('#org-st3').validate({
+             submitHandler: function(form) {
+                jQuery.ajax({
+                    type:'post',
+                    url:site('invites'),
+                    data:jQuery( form ).serialize(),
+                    success:function(r){ 
+                        console.log(r);
+                    }
+                });
+                next('#org-step1','#org-step2');
+                return false; 
+             }
+        });
+        
+        jQuery(document).on('submit','form',function(e){e.preventDefault();});
+        var prj=1;
+        jQuery('#addp').click(function(e){
+            var htm = '<div class="fg">'
+                htm += '  <label></label>';
+                htm += '  <span><input type="text" name="Project['+prj+'][title]" placeholder="Add Project Title"/></span>';
+                htm += '</div>';
+                prj++;
+            jQuery('.prjWrap').append(htm);
+        });
+        
+        var usr=1;
+        jQuery('#addu').click(function(e){
+            var htm = '<div class="fg">'
+                htm += '  <input type="email" name="User['+usr+'][email]" placeholder="Email address"/>';
+                htm += '  <select name="User['+usr+'][role_id]">';
+                htm += roles;
+                htm += '  </select>';
+                htm += '  </span>';
+                htm += '</div>';
+                usr++;
+            jQuery('.usrWrap').append(htm);
+        });
+        
+        next=function(hide,show){
+            jQuery(hide).slideUp();
+            jQuery(show).slideDown();
+            jQuery('._ml .active i').removeClass('fa-chevron-right').addClass('fa-check');
+            jQuery('._ml .active').removeClass('active').parent().next().find('a').addClass('active');
+        }
+        
+    });
+</script>

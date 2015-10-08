@@ -1,0 +1,31 @@
+<% for(var i=0; i<rows.length; i++) { %>
+    <li data='<%= JSON.stringify(rows[i]) %>' id="<%= rows[i].id %>" class="pic appended thumb">
+        
+          <a  class="lb" href="<%= config.base + 'photo/view/' + rows[i].id %>" photo="<%= rows[i].large %>">
+            <img src="<%= rows[i].thumb %>" width="<%= rows[i].dim[0] %>" height="<%= rows[i].dim[1] %>" />
+          </a>
+          <div class="w-stats">
+              <div class="size">Size:<%= parseInt(rows[i].size/1024) %>KB</div>
+              <span class="wd"><b>Dimentions:</b><%= rows[i].width %>X<%= rows[i].height %></span>
+             
+                  <% for(j in rows[i].meta) { %>
+                  <div class="meta-<%= j %>">
+                      <span class="meta-title"><%=j %></span>
+                        <% for(k in rows[i].meta[j]){ if(!isNaN(k)) { %>
+                        
+                            <% if(j=='tags'){ %>
+                                <span class="cmeta"><a href="/<%= j %>/<%= rows[i].meta[j][k].slug %>"><%= rows[i].meta[j][k].name %></a></span>
+                            <% }else if(j=='category'){ %>
+                                <span class="cmeta"><a href="/cp/<%= rows[i].meta[j][k].slug %>"><%= rows[i].meta[j][k].name %></a></span>
+                            <% }else{ %>
+                                <span class="cmeta"><%= rows[i].meta[j][k].name %></span>
+                            <% } %>
+                        <% } } %>
+                  </div>
+                  <% } %>
+             
+          </div>
+    </li>
+<% } %>
+
+

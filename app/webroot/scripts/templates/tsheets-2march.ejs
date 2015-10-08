@@ -1,0 +1,31 @@
+<div class="bc">
+    <a href="<%= config.home %>">Home</a> » <a href="<%= config.home %>/timesheets">Timesheets</a>
+</div>
+<div class="col-12">
+<div class="rw">
+    <h2>Timesheet - <%= data.date %> - Total Hours: <%= data.total%></h2> 
+    <span class="nav">
+    	<a href="<%= config.home %>timesheets?day=<%= data.prev %>">Prev</a>
+    	<% if(data.next != undefined){ %><a href="<%= config.home %>timesheets?day=<%= data.next %>">Next</a> <% }else{ %>
+        <a href="">Next</a><% } %>
+    </span>
+    
+    <table class="table table-striped">
+        <thead>
+            <tr><th>Sr.No</th><th>Project</th><th>Start</th><th>End</th><th>Duration</th><th>Action</th></tr>
+        </thead>
+        
+            <tbody>
+                <% if(data.ts != undefined){ for(var i=0; i<data.ts.length; i++) { var atom=data.ts[i]; %>
+                <tr>
+                    <td><%= i %></td><td><%= atom.project %></td><td><%= atom.start %></td><td><%= atom.end %></td><td><%= atom.duration %></td><td><a href="">Remove</a></td>
+                </tr>
+                <% } }else{ %>
+                <tr><td colspan="6"><center>No Record Today!</center></td></tr>
+                <% } %>
+            </tbody>
+    </table>
+    
+</div>
+
+</div>

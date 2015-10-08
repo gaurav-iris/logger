@@ -1,0 +1,22 @@
+<% if(users){ for(i=0;i < users.length;i++){ var user = users[i]; %>
+
+<div class="item <% if(!user.vr){ %>inactive<% }  %> <% if(user.el){ %>disabled<% }  %>">
+    <% if(user.im){ %>
+    <div class="image">
+        <img src="/<%= user.im %>" />
+    </div>
+    <% }else{ %>
+    <div class="avt">
+        <%= user.in %>
+    </div>
+    <% } %>
+    <div class="ude">
+        <%= user.nm %> <% if(user.el){ %> - joined<% } %> <br/>(@<%= user.un %>)
+    </div>
+    <input type="hidden" name="um" value='<%= JSON.stringify(user) %>' />
+</div>
+
+<% } }else{ %>
+<div class="nor">No User Found</div>
+<% } %>
+

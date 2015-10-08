@@ -1,0 +1,44 @@
+<div class="bc">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/organizations" class="_a">Organizations</a></li>                
+    </ul>  
+  </div>
+  <div class="pt _o">
+      <h3>Create new organization — for all your companies to work on.  <a href="/organizations/create" class="b-grey xs"><i class="fa fa-plus"></i>Create a new</a></h3>
+  </div>
+<div class="col-12">
+     <% if(data.org != undefined){ for(var i=0; i<data.org.length; i++) { var atom=data.org[i]; %>
+         <div id="org">
+            <div class="u-info">
+                <div class="u-img">
+                   <a class="o-name" href="<%= atom.oz.href %>"><img alt="logo" src="/<%= atom.oz.logo %>" height="150"/></a>
+                </div>
+                <a class="o-name" href="<%= atom.oz.href %>"><%= atom.oz.title %></a>
+              
+                 <div class="pull-right">
+                    <a title="Choose a Plan for this organization" href="#" class="b-green xs"><i class="fa fa-chain"></i> Choose a plan</a>
+                    <a title="Manage the billing for this organization" href="#" class="b-red xs"><i class="fa fa-credit-card"></i> Manage billing</a>
+                 </div>
+                 <div class="u-cnt"> 
+                     <p><%= atom.oz.description %></p>
+                 </div>
+                 <hr>
+                
+             </div><!-- End u-info --> 
+             <div class="info-bar">
+                  <ul>
+                      <li><a href="#"><span class="value">Standard Timezone</span><span class="labl"><%= atom.tz %></span></a></li>
+                      <li><a href="#"><span class="value">User (s)</span><span class="labl"><%= atom.uz.length %></span></a></li>
+                      <li><a href="#"><span class="value">Project(s)</span><span class="labl"><%= atom.pz.length %></span></a></li>
+                      <li><a href="#"><span class="value">Created On</span><span class="labl"><%= atom.oz.created %></span></a></li>
+
+                  </ul>
+              </div>             
+        </div> <!-- End Org --> 
+        <% } }else{ %>
+             <div class="_no">No Organization Defined!</div>
+                   
+      <% } %>
+    
+</div>
