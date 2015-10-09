@@ -59,7 +59,9 @@
              <div class="ulist">
                     <%  for(var i=0;i<data.org.pz.length;i++){ var pro=data.org.pz[i] %>
                         <div class="uitem">
-                            <div class="uinfo"><div acts="ut" id="<%= pro.id %>" class="ptitle"><%= pro.title %></div><br/><%= (pro.status)?'Active':'Inactive' %></div>
+                            <div class="pinfo"><div acts="ut" id="<%= pro.id %>" class="ptitle"><%= pro.title %></div>
+                            <br/><div acts="pd" id="<%= pro.id %>" class="pdesc"><%= pro.description %></div>
+                            <br/><%= (pro.status)?'Active':'Inactive' %></div>
                         </div>
                     <%  } %>
               </div>
